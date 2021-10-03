@@ -1,0 +1,108 @@
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.overall-container{
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    padding: 4% 5%;
+}
+
+.logo{
+    width:200px;
+}
+.inner-container{
+    display: flex;
+    padding-top: 4%; /*to push the branding up*/
+}
+
+.one img{
+    max-height: 480px;
+}
+/* ***************************Right side******************************** */
+.two{
+    color: #f3f3f3;
+    padding-left: 3%;
+}
+.two .two-main-header{
+    font-size: 2.3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 8%;
+}
+
+.two p{
+    line-height: 1.8;
+    opacity: .8;
+    margin-bottom: 20px;
+}
+
+.two a{
+    background-color: #f3f3f3;
+    padding: 3% 9%;
+    display: inline-block;
+    border-radius: 25px;
+    border-style: none;
+    transition: all .3 ease-in;
+    text-decoration: none;
+}
+
+.two a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color:#f3f3f3;
+}
+
+.two a span{
+    opacity: .8;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.icons{
+    float:right;
+    padding-right: 3%;
+    color: #f3f3f3
+}
+.icons i{
+    margin-right:25px;
+    opacity: .8;
+    font-size: 25px; /*the class fa-2x is a little too big so we have to modify the font size here*/
+    transition: all .3 ease-in;
+}
+.icons i:last-child{
+    margin-right: 0;
+}
+.icons i:hover{
+    color:hsl(300, 69%, 71%);
+}
+.attribution a:last-child{
+    text-transform: uppercase;
+    font-weight:600;
+}
+/* ************************Responsive section *********************************** */
+
+@media (max-width: 1160px) {
+    .inner-container{
+        flex-direction: column;
+        padding: 6% 0 10%;
+    }
+    .overall-container{
+        padding:8% 2%;
+        background-image: url("../images/bg-mobile.svg");
+        overflow: hidden;
+    }
+    .one img{
+        max-width:100%;
+    }
+    .two{
+        text-align: center;
+        padding:0;
+    }
+    .icons{
+        float:none;
+        text-align:center;
+        padding:0;
+    }
+}
